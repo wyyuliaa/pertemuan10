@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="text" id="txNAMA">
+    <button id="cmdNAMA"> Get Nama </button>
+
+    <p class="viewNAMA">--NAMA--</p>
+    <script src="../jquery.js"></script>
+    <script>
+        $(function(){
+            $("#cmdNAMA").on("click",function(){
+                let nama = $("#txNAMA").val()
+                console.log(nama)
+                $(".viewNAMA").html(nama)
+            })
+        })
+    </script>
+    
+</body>
+</html>
